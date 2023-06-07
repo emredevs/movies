@@ -18,7 +18,7 @@
     align-items: center;
     width: 50%;
     border: 3px solid rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     
 }
@@ -28,7 +28,7 @@
     width: 100%;
     margin: 5px;
     /* background-color: white; */
-    color: #cecaca;
+    color: #1b1b1b;
     font-weight: bold;
     
 }
