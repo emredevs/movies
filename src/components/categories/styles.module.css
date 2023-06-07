@@ -6,13 +6,52 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: rgb(209, 204, 197);
+  background-color: rgb(145, 131, 131);
   border-radius: 10px;
 }
 .categorysBox {
+
 }
 .categorysLink {
   color: black;
   font-size: large;
   font-weight: bold;
 }
+
+@media (max-width: 1124px) {
+.categorys{
+  width: 80%;
+  gap: 5px;
+  margin: 2px auto;
+}
+
+
+}
+
+@media (max-width: 1055px){
+  .categorys{
+width: 100%;
+
+  }
+  .categorysLink{
+    width: 80%;
+   margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 910px){
+  
+.categorys {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.categorysLink {
+ 
+  font-size: small;
+  width:auto;
+}
+}
+
+

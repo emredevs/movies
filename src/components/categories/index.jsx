@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 export default function Categories() {
   return (
     <div className={styles.categorys}>
-      {Genres.slice(0, 12).map((genres) => (
+      {Genres.slice(0, 10).map((genres) => (
         <div className={styles.categorysBox} key={genres.id}>
           <Link to={`/${genres.name}`} className={styles.categorysLink}>
             {genres.name}
