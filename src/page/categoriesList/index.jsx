@@ -4,7 +4,7 @@ import Header from "../../components/header";
 import Categories from "../../components/categories";
 import axios from "axios";
 import styles from "../../components/movie-list/styles.module.css";
-
+import Movies from "../../movies.json";
 export default function CategoriesList() {
   const { id } = useParams();
   const [categorList, setCategoryList] = useState([]);
@@ -21,6 +21,19 @@ export default function CategoriesList() {
       <Header />
       <Categories />
       <div className={styles.moviList}>
+        {Movies.slice(10, 20).map((categorList) => (
+          <div className={styles.moviBox} key={categorList.id}>
+            <img
+              src={`https://image.tmdb.org/t/p/original${categorList.poster_path}`}
+              alt={categorList.title}
+            />
+            <div>{categorList.title}</div>
+            <Link to={`/detail/${categorList.id}`}>Go to Movie</Link>
+          </div>
+        ))}
+      </div>
+
+      {/* <div className={styles.moviList}>
         {categorList.map((categorList) => (
           <div className={styles.moviBox} key={categorList.id}>
             <img src={categorList.image} alt={categorList.title} />
@@ -28,7 +41,7 @@ export default function CategoriesList() {
             <Link to={`/detail/${categorList.id}`}>Go to Movie</Link>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
