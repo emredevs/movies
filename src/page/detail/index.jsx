@@ -44,13 +44,14 @@ export default function Detail() {
               src={`https://image.tmdb.org/t/p/original${moviesFind.poster_path}`}
               alt=""
             />
+          </div>
+          <div>
             <div>Title: {moviesFind.title}</div>
             <div>Release Date: {moviesFind.release_date}</div>
             <div>Vote Average: {moviesFind.vote_average}</div>
             <div>Vote Count: {moviesFind.vote_count}</div>
+            <div>Overview: {moviesFind.overview}</div>
           </div>
-
-          <div>Overview: {moviesFind.overview}</div>
         </div>
 
         {/* <div>

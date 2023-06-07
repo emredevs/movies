@@ -17,9 +17,15 @@ export default function Sidebar() {
         </button>
         <div className={`sidebar ${isOpen ? "open" : ""}`}>
           <ul className="menu">
-            <li>Türk Sineması</li>
-            <li>Covid-19 Hakkında</li>
-            <li>Tümü</li>
+            <li>
+              <Link to={"/"}>Türk Sineması</Link>
+            </li>
+            <li>
+              <Link to={"/"}>Covid-19 Hakkında</Link>
+            </li>
+            <li>
+              <Link to={"/"}>Tümü</Link>
+            </li>
           </ul>
         </div>
       </div>

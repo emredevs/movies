@@ -14,7 +14,7 @@
 .detailInfoBox{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 50%;
     border: 3px solid rgb(255, 255, 255);
@@ -22,13 +22,13 @@
     border-radius: 10px;
     
 }
+
 .detailInfoBox>div{
     border-radius: 10px;
     width: 100%;
     margin: 5px;
     background-color: white;
     color: #000;
-    font-size: large;
     font-weight: bold;
     
 }
