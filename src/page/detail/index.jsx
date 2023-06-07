@@ -38,7 +38,7 @@ export default function Detail() {
               style={{
                 width: "500px",
                 height: "400px",
-                objectFit: "cover",
+                objectFit: "fill",
                 borderRadius: "10px",
               }}
               src={`https://image.tmdb.org/t/p/original${moviesFind.poster_path}`}
