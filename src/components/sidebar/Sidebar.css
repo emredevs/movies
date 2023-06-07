@@ -1,0 +1,52 @@
+.sidebarContainer{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  gap: 20px;
+  color: black;
+}
+.sidebar {
+  position: absolute;
+    width: 200px;
+    height: 50%;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-200px);
+  border-radius: 10px;
+
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .toggle-button {
+    position: relative;
+    top: 0px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+
+
+ 
