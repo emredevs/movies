@@ -8,7 +8,13 @@ export default function Header() {
   return (
     <div className={styles.headerContainer}>
       <Sidebar />
-      <div>logosadvs</div>
+      <div>
+        <img
+          style={{ borderRadius: "50%", width: "15%" }}
+          src={"/logo.jpeg"}
+          alt=""
+        />
+      </div>
       <div className={styles.iconMenu}>
         <input type="range" />
 
